@@ -1,0 +1,55 @@
+/* ==========================================================================
+   IDROGOTECH - Diseño Adaptable y Responsive (Mobile First / Media Queries)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-auth {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .catalog-controls {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        flex-direction: column;
+    }
+}
