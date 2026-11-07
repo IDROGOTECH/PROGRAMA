@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos y Recursos Gratuitos - IDROGOTECH</title>
+    <!-- Rutas corregidas a la raíz -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="img/icono.jpg" alt="IDROGOTECH Logo">
+                <span>IDROGO<span class="highlight">TECH</span></span>
+            </a>
+            <nav class="navbar-menu" id="navbarMenu">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo digital</a>
+                <a href="cursos-gratuitos.html" class="active">Cursos gratuitos</a>
+                <a href="biblioteca.html">Mi biblioteca</a>
+            </nav>
+            <div class="navbar-auth" id="navbarAuth">
+                <a href="login.html" class="btn-login">Iniciar sesión</a>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="catalog-main container">
+        <div class="catalog-header">
+            <h2>Cursos y Recursos Gratuitos</h2>
+            <p>Accede a material de estudio, guías técnicas, libros y clases libres sin costo.</p>
+        </div>
+
+        <!-- CONTROLES DE BÚSQUEDA Y FILTROS -->
+        <div class="catalog-controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar por título o tema gratuito...">
+            </div>
+            <div class="filter-group">
+                <select id="categoryFilter">
+                    <option value="">Todas las categorías</option>
+                    <option value="civil">Ingeniería Civil</option>
+                    <option value="arquitectura">Arquitectura y Diseño</option>
+                    <option value="bim">AutoCAD y BIM</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="relevance">Ordenar por: Relevancia</option>
+                    <option value="name-asc">Nombre: A - Z</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- GRID DE PRODUCTOS GRATUITOS -->
+        <div class="products-grid" id="productsGrid">
+
+            <!-- TARJETA GRATUITA 1 -->
+            <!-- TARJETA GRATUITA 1 -->
+            <div class="product-card" data-category="civil" data-title="Carpeta de Recursos Gratuitos">
+                <div class="product-badge" style="background-color: #10b981; color: white;">Gratuito</div>
+                <div class="product-img" style="background-image: url('img/subcarpeta.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">APORTES DE INGENIERÍA CIVIL</span>
+                    <h4>Carpeta de Recursos Gratuitos</h4>
+                    <p>Contiene libros, enlaces de programas, planos, plantillas en Excel y archivos ZIP.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-folder-open"></i> Acceso Directo</span>
+                        <span class="price" style="color: #10b981; font-weight: bold;">Gratis</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Carpeta de Recursos Gratuitos', 0.00)">Ver
+                            detalles</button>
+                        <a href="https://drive.google.com/drive/folders/1QPU64T1dpdsNKXrFVU1RCxF-T4JOHoGy?hl=es-419&safe=active"
+                            class="btn btn-primary" style="background-color: #10b981;" target="_blank"
+                            rel="noopener noreferrer">Ver archivos en Drive</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA GRATUITA 2 -->
+            <div class="product-card" data-category="bim" data-title="Introducción a AutoCAD desde Cero">
+                <div class="product-badge" style="background-color: #10b981; color: white;">Gratuito</div>
+                <div class="product-img" style="background-image: url('img/subcarpeta.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">CURSOS VIRTUALES</span>
+                    <h4>Introducción a AutoCAD desde Cero</h4>
+                    <p>Curso práctico para dominar las herramientas esenciales del entorno 2D y comandos básicos.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-video"></i> Módulos en Video (no disponibles)</span>
+                        <span class="price" style="color: #10b981; font-weight: bold;">---</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Introducción a AutoCAD desde Cero', 0.00)">Ver
+                            detalles</button>
+                        <a href="#" class="btn btn-primary" style="background-color: #10b981;"
+                            onclick="downloadFree('Introducción a AutoCAD desde Cero'); return false;">Acceder al
+                            curso</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 IDROGOTECH. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script corregido -->
+    <script src="js/catalogo.js"></script>
+</body>
+
+</html>

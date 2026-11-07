@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca - IDROGOTECH</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="img/icono.jpg" alt="IDROGOTECH Logo">
+                <span>IDROGO<span class="highlight">TECH</span></span>
+            </a>
+            <nav class="navbar-menu" id="navbarMenu">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo digital</a>
+                <a href="cursos-gratuitos.html">Cursos gratuitos</a>
+                <a href="biblioteca.html" class="active">Mi biblioteca</a>
+            </nav>
+            <div class="navbar-auth" id="navbarAuth">
+                <span id="userNameDisplay">Usuario</span>
+                <a href="#" onclick="logout()" class="btn-login">Cerrar sesión</a>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 40px 20px; min-height: 70vh;">
+        <div class="catalog-header">
+            <h2>Mi Biblioteca Digital</h2>
+            <p>Accede y descarga de forma segura tus recursos adquiridos y guías gratuitas.</p>
+        </div>
+
+        <div class="library-grid" id="libraryGrid">
+            <!-- Ejemplo de recurso en biblioteca -->
+            <div class="product-card">
+                <div class="product-badge free">Adquirido</div>
+                <div class="product-img" style="background-image: url('img/subcarpeta.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">Topografía</span>
+                    <h4>Guía Práctica de Estación Total y GPS Diferencial</h4>
+                    <p>Descarga autorizada y verificada por el servidor.</p>
+                    <div class="product-actions">
+                        <button class="btn-download" onclick="secureDownload('Guía Práctica de Estación Total')"><i
+                                class="fas fa-download"></i> Descargar Archivo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 IDROGOTECH. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>

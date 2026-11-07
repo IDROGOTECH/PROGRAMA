@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDROGOTECH - Innovación Digital para la Ingeniería y la Arquitectura</title>
+    <!-- Rutas corregidas directamente a la carpeta css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="img/icono.jpg" alt="IDROGOTECH Logo">
+                <span>IDROGO<span class="highlight">TECH</span></span>
+            </a>
+
+            <nav class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="catalogo.html">Catálogo digital</a>
+                <a href="cursos-gratuitos.html">Cursos gratuitos</a>
+                <a href="biblioteca.html">Mi biblioteca</a>
+            </nav>
+
+            <div class="navbar-auth" id="navbarAuth">
+                <a href="login.html" class="btn-login">Iniciar sesión</a>
+                <a href="register.html" class="btn-register">Registrarse</a>
+            </div>
+
+            <div class="navbar-toggle" id="navbarToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL O HERO -->
+    <section class="hero-section"
+        style="background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.90)), url('img/interfaz.jpg');">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i> Plataforma Oficial de Ingeniería y Construcción
+            </div>
+            <h1>IDROGOTECH</h1>
+            <h2>Innovación digital para la ingeniería y la arquitectura</h2>
+            <p>Encuentra manuales, folletos, planos, guías técnicas y herramientas digitales para potenciar tus
+                proyectos y conocimientos profesionales.</p>
+            <div class="hero-buttons">
+                <a href="catalogo.html" class="btn-primary"><i class="fas fa-compass"></i> Explorar catálogo</a>
+                <a href="register.html" class="btn-secondary"><i class="fas fa-user-plus"></i> Crear cuenta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CATEGORÍAS -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h3>Especialidades y Áreas Técnicas</h3>
+                <p>Explora nuestra biblioteca clasificada de recursos profesionales para el desarrollo técnico y
+                    académico.</p>
+            </div>
+
+            <div class="categories-grid" id="categoriesGrid">
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=civil'">
+                    <div class="category-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h4>Ingeniería civil</h4>
+                    <p>Diseño estructural, análisis de cargas, pavimentos y normativas.</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=arquitectura'">
+                    <div class="category-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h4>Arquitectura y diseño</h4>
+                    <p>Planos arquitectónicos, urbanismo, modelado 3D y diseño sostenible.</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=estructuras'">
+                    <div class="category-icon"><i class="fas fa-building"></i></div>
+                    <h4>Estructuras y concreto armado</h4>
+                    <p>Manuales de diseño en concreto armado, acero y preesembutidos.</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=topografia'">
+                    <div class="category-icon"><i class="fas fa-mountain"></i></div>
+                    <h4>Topografía y geodesia</h4>
+                    <p>Levantamientos catastrales, estaciones totales, GPS diferencial y cartografía.</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=hidraulica'">
+                    <div class="category-icon"><i class="fas fa-water"></i></div>
+                    <h4>Hidráulica y saneamiento</h4>
+                    <p>Diseño de redes de agua potable, alcantarillado, canales y presas.</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=carreteras'">
+                    <div class="category-icon"><i class="fas fa-road"></i></div>
+                    <h4>Carreteras y pavimentos</h4>
+                    <p>Diseño geométrico vial, pavimentos flexibles y rígidos, señalización.</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=construccion'">
+                    <div class="category-icon"><i class="fas fa-calculator"></i></div>
+                    <h4>Construcción y presupuestos</h4>
+                    <p>Metrados, presupuestos, análisis de costos unitarios y programación de obra (MS Project).</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('img/SUBCARPETA.jpeg');"
+                    onclick="location.href='catalogo.html?cat=bim'">
+                    <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h4>AutoCAD, Revit y BIM</h4>
+                    <p>Plantillas avanzadas, familias paramétricas y flujos de trabajo BIM.</p>
+                    <span class="category-link">Ver recursos <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="img/icono.jpg" alt="IDROGOTECH Logo">
+                    <span>IDROGO<span class="highlight">TECH</span></span>
+                </div>
+                <p>Plataforma profesional especializada en distribución de recursos digitales avanzados para ingeniería
+                    civil y arquitectura.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="catalogo.html">Catálogo Digital</a></li>
+                    <li><a href="biblioteca.html">Mi Biblioteca</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="register.html">Registro de Usuario</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Soporte Técnico</h4>
+                <p><i class="fas fa-envelope"></i> soporte@idrogotech.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jaén, Perú</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 IDROGOTECH. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Ruta corregida a la carpeta js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

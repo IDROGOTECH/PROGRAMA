@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Digital - IDROGOTECH</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="img/icono.jpg" alt="IDROGOTECH Logo">
+                <span>IDROGO<span class="highlight">TECH</span></span>
+            </a>
+            <nav class="navbar-menu" id="navbarMenu">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html" class="active">Catálogo digital</a>
+                <a href="cursos-gratuitos.html">Cursos gratuitos</a>
+                <a href="biblioteca.html">Mi biblioteca</a>
+            </nav>
+            <div class="navbar-auth" id="navbarAuth">
+                <a href="login.html" class="btn-login">Iniciar sesión</a>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="catalog-main container">
+        <div class="catalog-header">
+            <h2>Catálogo de Recursos Técnicos</h2>
+            <p>Busca, filtra y adquiere manuales, plantillas y herramientas especializadas.</p>
+        </div>
+
+        <div class="catalog-controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar por título, autor o tema...">
+            </div>
+            <div class="filter-group">
+                <select id="categoryFilter">
+                    <option value="">Todas las categorías</option>
+                    <option value="civil">Ingeniería Civil</option>
+                    <option value="arquitectura">Arquitectura y Diseño</option>
+                    <option value="estructuras">Estructuras y Concreto</option>
+                    <option value="bim">AutoCAD, Revit y BIM</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="relevance">Ordenar por: Relevancia</option>
+                    <option value="price-asc">Precio: Menor a Mayor</option>
+                    <option value="price-desc">Precio: Mayor a Menor</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+
+           
+
+            <!-- 2. OFIMÁTICA -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/ofic.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>Office Professional Plus 2019</h4>
+                    <h4>Office Professional Plus 2021</h4>
+                    <p>Instalación completa y activada del paquete de ofimática.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Office Professional Plus 2019', 20.00)">Ver
+                            detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20Office%20Professional%20Plus%202019%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. AUTODESK Y BIM -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/autodesk.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>AUTODESK® y Diseño BIM</h4>
+                    <p>Paquete de programas de diseño asistido por computadora y metodología BIM.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('AUTODESK y Diseño BIM', 20.00)">Ver
+                            detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20AUTODESK%C2%AE%20y%20Dise%C3%B1o%20BIM%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. DISEÑO ARQUITECTÓNICO -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/arqui.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>Diseño Arquitectónico y Modelado</h4>
+                    <p>Paquete de programas completo para arquitectura.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Diseño Arquitectónico y Modelado', 20.00)">Ver
+                            detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20Dise%C3%B1o%20Arquitect%C3%B3nico%20y%20Modelado%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. INGENIERÍA ESTRUCTURAL -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/estruct.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>Ingeniería Estructural</h4>
+                    <p>Paquete de programas completo para cálculo y análisis estructural.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Ingeniería Estructural', 20.00)">Ver
+                            detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20Ingenier%C3%ADa%20Estructural%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. TOPOGRAFÍA Y GIS -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/gis.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>Topografía y Sistemas GIS</h4>
+                    <p>Paquete de programas completo para cartografía y geomática.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Topografía y Sistemas GIS', 20.00)">Ver
+                            detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20Topograf%C3%ADa%20y%20Sistemas%20GIS%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. SOFTWARE HIDRÁULICO Y SANITARIO -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/hidraul.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>SOFTWARE HIDRÁULICO Y SANITARIO</h4>
+                    <p>Incluye software profesional para ingeniería sanitaria, modelación hidráulica de tuberías y
+                        dimensionamiento de redes exteriores.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Recurso 7', 20.00)">Ver detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20SOFTWARE%20HIDR%C3%81ULICO%20Y%20SANITARIO%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. ESTADÍSTICA Y ANÁLISIS DE DATOS -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/estadis.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>ESTADISTICA Y ANÁLISIS DE DATOS</h4>
+                    <p>Paquete completo de programas y hojas de cálculo para estadística descriptiva, inferencial y
+                        modelado predictivo.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Recurso 8', 20.00)">Ver detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20ESTADISTICA%20Y%20AN%C3%81LISIS%20DE%20DATOS%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. CÁLCULO MATEMÁTICO Y CIENTÍFICO -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/calcul.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>Cálculo Matemático y Científico</h4>
+                    <p>Herramientas especializadas para simulación científica, análisis matemático y procesamiento de
+                        algoritmos complejos.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Recurso 9', 20.00)">Ver detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20C%C3%A1lculo%20Matem%C3%A1tico%20y%20Cient%C3%ADfico%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. OFIMÁTICA Y PRODUCTIVIDAD -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/ofimat.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>COMPLETO Ofimática y Productividad</h4>
+                    <p>programas de ofimática y utilidades para potenciar la productividad en tareas académicas y
+                        profesionales.</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Recurso 10', 20.00)">Ver detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20COMPLETO%20Ofim%C3%A1tica%20y%20Productividad%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. DISEÑO GRÁFICO -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/diseno.jpeg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>Diseño Gráfico</h4>
+                    <p>Herramientas profesionales para ilustración digital, retoque fotográfico y producción gráfica de
+                        alto impacto</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Recurso 11', 20.00)">Ver detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20Dise%C3%B1o%20Gr%C3%A1fico%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. HERRAMIENTAS Y UTILIDADES -->
+            <div class="product-card">
+                <div class="product-badge paid">De Pago</div>
+                <div class="product-img" style="background-image: url('img/herramtas.jpg');"></div>
+                <div class="product-body">
+                    <span class="product-cat">PROGRAMAS</span>
+                    <h4>Herramientas y Utilidades</h4>
+                    <p>Colección de herramientas complementarias y programas de soporte para optimizar procesos y tareas
+                        informáticas diarias</p>
+                    <div class="product-meta">
+                        <span class="format"><i class="fas fa-file-archive"></i> ZIP completo</span>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-detail" onclick="openDetail('Recurso 12', 20.00)">Ver detalles</button>
+
+                        <a href="https://wa.me/51946675656?text=Hola%2C%20IDROGOTECH.%20Estoy%20interesado%20en%20comprar%20el%20siguiente%20producto%3A%0A%0A%F0%9F%93%A6%20Producto%3A%20Herramientas%20y%20Utilidades%0A%0A%F0%9F%92%B0%20Precio%3A%20S%2F%2020.00%0A%0AQuisiera%20recibir%20informaci%C3%B3n%20sobre%20la%20compra%2C%20instalaci%C3%B3n%20y%20entrega%20del%20producto.%0A%0A%C2%A1Gracias%21"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 IDROGOTECH. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/catalogo.js"></script>
+</body>
+
+</html>
